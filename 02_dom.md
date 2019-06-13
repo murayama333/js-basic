@@ -65,7 +65,7 @@ DOMはHTML（XML）文書内の要素を操作するAPIです。ブラウザで�
     <h3 id="header">Form</h3>
     <hr>
     <form>
-      <input type="text" id="num1" value="Hello World" />
+      <input type="text" id="txt1" value="Hello World" />
       <input type="button" value="show" />
       <div id="result"></div>
     </form>
