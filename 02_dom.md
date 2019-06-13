@@ -19,9 +19,10 @@ DOMはHTML（XML）文書内の要素を操作するAPIです。ブラウザで�
 
 > Document Object Model (DOM) は、W3Cから勧告されている HTML文書やXML文書をアプリケーションから利用するためのAPIである。 Level 1 から Level 3 まで勧告されている。 XMLを読み込む別のAPIであるSAXと異なり、XMLデータをツリー構造として扱う事ができる。ただし、通常の場合対象のXML文書を全て読み込んでからの扱いを前提とするため動作速度が遅かったり、メモリーの使用量が大きくなる欠点もある。 W3CではAPIの仕様を定義しているのみで、特定のプログラム言語を対象としたものではない。 DOMの実装は各メーカーに委ねられており、DOMを実装したXMLパーサが各メーカーから提供されている。 - Wikipedia
 
-
-
 ## サンプルプログラム
+
+
+### dom.html
 
 ```html
 <!DOCTYPE html>
@@ -29,7 +30,6 @@ DOMはHTML（XML）文書内の要素を操作するAPIです。ブラウザで�
   <head>
     <meta charset="utf-8">
     <title>JavaScript Samples</title>
-    <script type="text/javascript" src="dom1.js"></script>
   </head>
   <body>
     <h3 id="header">Fruits List</h3>
@@ -43,18 +43,32 @@ DOMはHTML（XML）文書内の要素を操作するAPIです。ブラウザで�
       <input type="text" id="item" />
       <input type="button" onclick="add()" />
     </form>
+    <script type="text/javascript" src="dom1.js"></script>
   </body>
 </html>
 ```
 
+---
 
+### form.html
 
-
-
-
-
-
-
-
-
-
+```html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Samples</title>
+    <script type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <h3 id="header">Form</h3>
+    <hr>
+    <form>
+      <input type="text" id="num1" value="Hello World" />
+      <input type="button" value="show" />
+      <div id="result"></div>
+    </form>
+  </body>
+</html>
+```
