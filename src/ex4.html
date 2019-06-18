@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      function myFunc(){
+        var divs = $("div");
+        $(divs[1]).html($(divs[0]).html())
+      }
+    </script>
+  </head>
+  <body>
+    <div>Help</div>
+    <form name="frmA">
+      <input type="button" name="btnA" value="GO" onclick="myFunc()">
+    </form>
+    <div></div>
+  </body>
+</html>
