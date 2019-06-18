@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Samples</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function add() {
+        var x = $("#num1").val();
+        var y = $("#num2").val();
+        $("#result").text(parseInt(x + y))
+      }
+    </script>
+  </head>
+  <body>
+    <h3 id="header">jQuery</h3>
+    <hr>
+    <form>
+      <input type="number" id="num1" />
+      <input type="number" id="num2" />
+      <input type="button" value="calc" onclick="add()"/>
+      <div id="result"></div>
+    </form>
+  </body>
+</html>
