@@ -6,8 +6,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       function myFunc(){
-        var divs = $("div");
-        $(divs[1]).html($(divs[0]).html())
+        var div1 = $("div:eq(0)");
+        var div2 = $("div:eq(1)");
+        var val = div1.html();
+        div2.html(val);
       }
     </script>
   </head>

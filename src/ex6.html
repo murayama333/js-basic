@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      function myFunc(){
+        var txt1 = $("#txt1").val();
+
+        var li = $("<li>");
+        li.text(txt1);
+
+        var ul = $("#fruits-list");
+        ul.append(li);
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="txt1">
+      <input type="button" name="btnA" value="Add" onclick="myFunc()">
+    </form>
+    <ul id="fruits-list"></ul>
+  </body>
+</html>
+
