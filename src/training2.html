@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript samples</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+          var text = $("#div1").text();
+          console.log(text);
+
+          $("#btn1").click(function() {
+            console.log("click!");
+          });
+        });
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript samples</h1>
+    <div id="div1">Hello World</div>
+    <button type="button" id="btn1">click</button>
+  </body>
+</html>
