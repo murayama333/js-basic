@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript samples</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function counter() {
+        var count = 0;
+        return function() {
+          count++;
+          return count;
+        }
+      }
+
+      function myFunc() {
+        var myCounter = counter();
+
+        console.log(myCounter());
+        console.log(myCounter());
+        console.log(myCounter());
+      }
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript samples</h1>
+    <div id="div1">Hello World</div>
+    <button type="button" onclick="myFunc()">click</button>
+  </body>
+</html>

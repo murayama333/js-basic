@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript samples</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      function myFunc() {
+        var array = [3, 4, 5, 6];
+        array = array.filter(function(e) { return e % 3 == 0; });
+        array = array.map(function(e) { return e * 2; });
+        array.forEach(function(e) { console.log(e); });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript samples</h1>
+    <div id="div1">Hello World</div>
+    <button type="button" onclick="myFunc()">click</button>
+  </body>
+</html>
